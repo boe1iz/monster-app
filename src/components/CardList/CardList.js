@@ -1,6 +1,6 @@
-import React from "react";
-import "./CardList.css";
-import Card from "../Card/Card";
+import React from 'react';
+import './CardList.css';
+import Card from '../Card/Card';
 
 const CardList = props => {
   return (
@@ -20,7 +20,7 @@ const CardList = props => {
         //   <p className="card-text">{item.phone}</p>
         //   <p className="card-text">{item.website}</p>
         // </div>
-        <Card monster={monster} />
+        <Card key={monster.id} monster={monster} />
       ))}
     </div>
   );

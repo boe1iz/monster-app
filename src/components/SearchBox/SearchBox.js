@@ -1,13 +1,13 @@
-import React from "react";
-import "./SearchBox.css";
+import React from 'react';
+import './SearchBox.css';
 
-const SearchBox = props => {
+const SearchBox = ({ placeholder, handleChange }) => {
   return (
     <input
-      className="search-box"
       type="search"
-      placeholder="search monsters"
-      onChange="{props.onSearchChange}"
+      className="search"
+      placeholder={placeholder}
+      onChange={handleChange}
     />
   );
 };
